@@ -1,0 +1,39 @@
+
+header {
+    background-color: #bababa;
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+
+footer {
+    background-color: #bababa;
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos en línea */
+    margin-right: 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #193048; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado en los elementos al pasar el ratón */
+}
