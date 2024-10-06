@@ -169,3 +169,36 @@ body {
     color: #d35400; /* Color distintivo para el título del dato curioso */
 }
 
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 600px) {
+    .descripcion-con-foto-derecha {
+        flex-direction: column; /* Cambia a columna para que el texto esté encima de la imagen */
+    }
+
+    .foto-derecha {
+        float: none; /* Elimina el flotado */
+        margin-left: 0; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .foto {
+        width: 100%; 
+        height: auto; /* Esto permite que la altura sea automática */
+        max-width: 400px; /* Crea un máximo ancho para mejorar la visualización */
+        margin: 10px auto; /* Es para centrar las fotos en el contenedor */
+    }
+
+    .fotos-debajo img {
+        width: 80%; /* Aumentar el tamaño de las imágenes de abajo */
+        max-width: 350px; /* Establecer un tamaño máximo */
+    }
+
+    #btn-arriba {
+            bottom: 30px; /* Aumenta la distancia del borde inferior */
+            right: 30px; /* Aumenta la distancia del borde derecho */
+            padding: 15px; 
+            font-size: 20px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+        }
+}
