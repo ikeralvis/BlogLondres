@@ -30,3 +30,24 @@ section li {
     background: #f8f9fa; 
     border-radius: 4px; 
 }
+
+#btn-arriba {
+    position: fixed; /* Fija este boton en la pantalla para cuando hagas scroll*/
+    bottom: 20px; /* Distancia del boton al borde inferior */
+    right: 20px; /* Distancia del boton al borde derecho */
+    z-index: 99; /* Hacer que se quede por encima de otros elementos */
+    background-color: #007BFF;
+    color: white; 
+    border: none; 
+    padding: 15px; 
+    border-radius: 25%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    font-size: 18px; 
+}
+
+#btn-arriba:hover {
+    background-color: #555;
+}
+

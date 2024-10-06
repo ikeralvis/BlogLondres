@@ -47,17 +47,21 @@ body {
     transform: scale(1.05); /* Cambia la escala al hacer hover */
 }
 
-.frase {
+#frase {
     margin: 1rem 0;
     font-size: 1.2rem;
     font-weight: bold;
-    border-top: 2px solid #007BFF; /* Barra superior */
-    border-bottom: 2px solid #007BFF; /* Barra inferior */
+    border-top: 2px solid #3f3f3f; 
+    border-bottom: 2px solid #3f3f3f;
     padding: 1rem 0;
-    
+    text-align: center;    
 }
 
 
+#planificacion, #intro{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .foto-grande {
     text-align: center;
     margin: 20px;
@@ -72,7 +76,9 @@ body {
 
 
 .dia {
-    margin: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
 
 }
 
@@ -81,31 +87,85 @@ body {
     
 }
 
-.descripcion-con-foto {
+.descripcion-con-foto-derecha {
     display: flex;
     justify-content: space-between;
+    text-align: justify;
+    
 
 }
+
+.descripcion-con-foto-abajo {
+    flex-direction: column;
+    text-align: justify;
+
+
+}
+
+
 .foto-derecha {
     margin-left: 12px;
-    display: flex  ;
-    flex-direction: column; /* Pone los elementos uno debajo del otro */
-    
+    float: right; /* Ubica la foto a la derecha */
+    width: 250px;
 }
 
 .foto-derecha img {
     width: 250px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px;*/ 
     border-radius: 5px;
 }
+
+
+
 .fotos-debajo {
-    margin-top: 12px;
-    display: flex;
-    margin-top: 12px;
+    text-align: center;
+    
 }
 
 .fotos-debajo img {
-    width: 300px;
+    width: 60%;
     margin: 12px;
     border-radius: 5px;
+    
 }
+
+#btn-arriba {
+    position: fixed; /* Fija este boton en la pantalla para cuando hagas scroll*/
+    bottom: 20px; /* Distancia del boton al borde inferior */
+    right: 20px; /* Distancia del boton al borde derecho */
+    z-index: 99; /* Hacer que se quede por encima de otros elementos */
+    background-color: #007BFF;
+    color: white; 
+    border: none; 
+    padding: 15px; 
+    border-radius: 25%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    font-size: 18px; 
+    transition: background-color 0.3s ease;
+    
+}
+
+#btn-arriba:hover {
+    background-color: #555;
+}
+
+
+
+.dato-interesante {
+    background-color: #ffefcc; 
+    border-left: 5px solid #ffa500; 
+    padding: 10px; 
+    margin-top: 15px; 
+    border-radius: 5px; 
+    font-style: italic; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.dato-interesante h4 {
+    margin-top: 0; /* Elimina el margen superior */
+    font-weight: bold;
+    color: #d35400; /* Color distintivo para el título del dato curioso */
+}
+
