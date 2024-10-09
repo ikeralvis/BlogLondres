@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    font-size: 18px;
     padding: 0;
     background-color: #f4f4f4;
 }
@@ -17,6 +18,7 @@ h2{
     border: 1px solid black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Asegura que el iframe no sobresalga */
+    margin-bottom: 20px;
 }
 
 iframe {

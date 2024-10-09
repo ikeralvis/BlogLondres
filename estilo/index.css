@@ -1,204 +1,237 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 #fotos-destacadas {
-    padding: 15px;
-    background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
 }
+
 #fotos-destacadas a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .fotos-container {
-    display: flex;
-    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-    flex-wrap: wrap; /* Poner los elementos en varias filas */
-    margin: 0 auto; 
+  display: flex;
+  justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+  flex-wrap: wrap; /* Esta propiedad permite que los elementos flexibles se distribuyan en varias líneas si no caben en una sola línea  */
+  margin: 0 auto;
 }
 
 .foto {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 200px; 
-    height: 200px; 
-    margin: 5px;
-    text-align: center;
-    padding: 15px;
-    
-    transition: transform 0.3s ease-in-out; /* Animacion para cuando se pase el mouse */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out; /* Animacion para cuando se pase el mouse */
 }
 
 .foto img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .foto p {
-    margin: 0;
-    color: #555;
+  margin: 0;
+  color: #555;
 }
 
 .foto:hover {
-    transform: scale(1.05); /* Cambia la escala al hacer hover */
+  transform: scale(1.05); /* Cambia la escala al hacer hover */
 }
 
 #frase {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-top: 2px solid #3f3f3f; 
-    border-bottom: 2px solid #3f3f3f;
-    padding: 1rem 0;
-    text-align: center;    
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 2px solid #3f3f3f;
+  border-bottom: 2px solid #3f3f3f;
+  padding: 1rem 0;
+  text-align: center;
 }
 
-
-#planificacion, #intro{
-    margin-left: 5%;
-    margin-right: 5%;
+#planificacion,
+#intro {
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
 .foto-grande {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
-
 
 .foto-grande img {
-    width: 100%;
-    max-width: 900px; 
-    border-radius: 8px; 
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
 }
 
-
 .dia {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 30px;
-
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 40px;
 }
 
 .lugar {
-    margin-bottom: 10px;
-    
+  margin-bottom: 20px;
 }
 
 .descripcion-con-foto-derecha {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    
-
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
 }
 
 .descripcion-con-foto-abajo {
-    flex-direction: column;
-    text-align: justify;
-
-
+  flex-direction: column;
+  text-align: justify;
 }
 
-
 .foto-derecha {
-    margin-left: 12px;
-    float: right; /* Ubica la foto a la derecha */
-    width: 250px;
+  margin-left: 45px;
+  float: right; /* Ubica la foto a la derecha */
+  width: 250px;
 }
 
 .foto-derecha img {
-    width: 250px;
-    /* margin-bottom: 10px;*/ 
-    border-radius: 5px;
+  width: 250px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-
-
 .fotos-debajo {
-    text-align: center;
-    
+  display: flex; /* Hace que los elementos hijos se distribuyan en una fila utilizando el modelo de caja flexible */
+  justify-content: center;
+  flex-wrap: wrap; 
+  
 }
 
 .fotos-debajo img {
-    width: 60%;
-    margin: 12px;
-    border-radius: 5px;
-    
+  width: 60%;
+  margin: 12px;
+  border-radius: 5px;
 }
 
 #btn-arriba {
-    position: fixed; /* Fija este boton en la pantalla para cuando hagas scroll*/
-    bottom: 20px; /* Distancia del boton al borde inferior */
-    right: 20px; /* Distancia del boton al borde derecho */
-    z-index: 99; /* Hacer que se quede por encima de otros elementos */
-    background-color: #007BFF;
-    color: white; 
-    border: none; 
-    padding: 15px; 
-    border-radius: 25%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    font-size: 18px; 
-    transition: background-color 0.3s ease;
-    
+  position: fixed; /* Fija este boton en la pantalla para cuando hagas scroll*/
+  bottom: 20px; /* Distancia del boton al borde inferior */
+  right: 20px; /* Distancia del boton al borde derecho */
+  z-index: 99; /* Hacer que se quede por encima de otros elementos -- Informacion de foros de internet*/
+  background-color: #e0b400;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 25%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 #btn-arriba:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-
-
 .dato-interesante {
-    background-color: #ffefcc; 
-    border-left: 5px solid #ffa500; 
-    padding: 10px; 
-    margin-top: 15px; 
-    border-radius: 5px; 
-    font-style: italic; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #ffefcc;
+  border-left: 5px solid #ffa500;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .dato-interesante h4 {
-    margin-top: 0; /* Elimina el margen superior */
-    font-weight: bold;
-    color: #d35400; /* Color distintivo para el título del dato curioso */
+  margin-top: 0; /* Elimina el margen superior */
+  font-weight: bold;
+  color: #d35400; /* Color distintivo para el título del dato curioso */
 }
+
+.foto-grande img,
+.foto-derecha img,
+.fotos-debajo img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Una transicion a la sombra, asi como al escalado de las imagenes */
+}
+.foto-grande img:hover,
+.foto-derecha img:hover,
+.fotos-debajo img:hover {
+  transform: scale(1.05); /* Incrementa un 5% el tamaño de todas las imagenes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
 
 /* Estilos responsivos para dispositivos móviles */
-@media (max-width: 600px) {
-    .descripcion-con-foto-derecha {
-        flex-direction: column; /* Cambia a columna para que el texto esté encima de la imagen */
-    }
+@media (max-width: 768px) {
+  .descripcion-con-foto-derecha {
+    flex-direction: column; /* Cambia a columna para que el texto esté encima de la imagen */
+  }
 
-    .foto-derecha {
-        float: none; /* Elimina el flotado */
-        margin-left: 0; 
-        width: 100%; 
-        margin-top: 10px; 
-    }
+  .foto-derecha {
+    float: none; /* Elimina el flotado  */
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    .foto {
-        width: 100%; 
-        height: auto; /* Esto permite que la altura sea automática */
-        max-width: 400px; /* Crea un máximo ancho para mejorar la visualización */
-        margin: 10px auto; /* Es para centrar las fotos en el contenedor */
-    }
+  .fotos-container {
+    flex-direction: column;
+    align-items: center; /* Centra las fotos en pantallas pequeñas */
+    width: 90%;
+    margin-left: 2px;
+  }
 
-    .fotos-debajo img {
-        width: 80%; /* Aumentar el tamaño de las imágenes de abajo */
-        max-width: 350px; /* Establecer un tamaño máximo */
-    }
+  .foto {
+    width: 100%;
+    height: auto; /* Esto permite que la altura sea automática */
+    max-width: 400px; 
+    margin: 10px auto; /* Es para centrar las fotos en el contenedor */
+  }
 
-    #btn-arriba {
-            bottom: 30px; /* Aumenta la distancia del borde inferior */
-            right: 30px; /* Aumenta la distancia del borde derecho */
-            padding: 15px; 
-            font-size: 20px; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
-        }
+  .fotos-debajo img {
+    width: 80%; /* Aumentar el tamaño de las imágenes de abajo */
+    max-width: 350px; 
+  }
+
+  #btn-arriba {
+    bottom: 30px; /* Aumenta la distancia del borde inferior */
+    right: 30px; /* Aumenta la distancia del borde derecho */
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .descripcion-con-foto-derecha {
+    display: block; /* Cambia el diseño a bloque en lugar de flexbox */
+    text-align: justify; 
 }
+
+.foto-derecha {
+    float: none; /* Elimina el float para que la imagen no esté alineada a la derecha */
+    width: 100%;
+    margin: 20px auto; /* Centra la imagen con un margen automático */
+    display: block;
+}
+
+.foto-derecha img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen en su contenedor */
+    max-width: 90%; /* Hace que la imagen no ocupe más del 90% del ancho de el tamaño especificado */
+}
+
+}
+
+
