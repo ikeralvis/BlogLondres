@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    font-size: 18px;
     background-color: #f4f4f4;
 }
 .container {
@@ -19,10 +18,6 @@ body {
     border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     
-    background-color: #f8f9fa; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    
 }
 
 .contacto {
@@ -30,8 +25,6 @@ body {
     padding: 20px; 
     background-color: #e9ecef; 
     border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-left: 15px;
     
@@ -49,35 +42,17 @@ label {
     display: block; /* Mostrar etiqueta como bloque y no como linea para que esten bien estructuras */
     margin-bottom: 5px; 
     font-weight: bold;
-    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
-input[type="tel"],
-input[type="date"],
 textarea {
-    width: 95%; 
     width: 95%; 
     border: 1px solid #ced4da;
     padding: 10px; 
     border-radius: 3px; 
-    font-size: 1rem;
-}
-
-select {
-    width: 98%;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid #ced4da;
-    font-size: 1rem;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 10px; /* Para separar el checkbox/radio y su etiqueta */
     font-size: 1rem;
 }
 
@@ -102,45 +77,15 @@ input[type="radio"] {
     border-radius: 4px; 
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     font-size: 1rem;
-    font-size: 1rem;
 }
 
 .boton-submit:hover {
-    background-color: #0056b3; 
-    transition: background-color 0.3s ease; 
     background-color: #0056b3; 
     transition: background-color 0.3s ease; 
 }
 
 .contacto-info {
     margin-top: 20px; 
-}
-
-input[type="checkbox"], input[type="radio"] {
-    transform: scale(1.2); /* Hace que los botones de selección sean un poco más grandes */
-}
-
-input[type="checkbox"] + label, /* Pone un estilo para los checkbox/radio que tengan un label */
-input[type="radio"] + label {
-    display: inline-block; /* Muestra el label en línea con el checkbox/radio */
-    margin-left: 5px;
-    font-size: 1rem;
-}
-
-.form-group input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Cambia a columna para que los bloques estén uno encima del otro */
-    }
-
-    .formulario, .contacto {
-        flex: 0 0 100%; /* Ambos bloques ocupan el 100% del ancho en móvil */
-        margin-left: 0;
-        margin-bottom: 15px; 
-    }
 }
 
 input[type="checkbox"], input[type="radio"] {
