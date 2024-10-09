@@ -15,9 +15,14 @@
             <h1><a href="../index.html">Viaje a Londres</a></h1>
             <p>Una guia para visitar Londres</p>
         </div>
+        <div id="cabecera">
+            <h1><a href="../index.html">Viaje a Londres</a></h1>
+            <p>Una guia para visitar Londres</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Información de interés</a></li>
                 <li><a href="pagina1.html">Información de interés</a></li>
                 <li><a href="pagina2.html">Mapa</a></li>
                 <li><a href="pagina3.html">Contacto</a></li>
@@ -80,6 +85,45 @@
     
 
                     <div class="form-group">
+                        <label for="motivo">Motivo de contacto:</label>
+                        <select id="motivo" name="motivo">
+                            <option value="consulta">Consulta</option>
+                            <option value="comentario">Comentario</option>
+                            <option value="sugerencia">Sugerencia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Intereses:</label>
+                        <div>
+                            <input type="checkbox" id="londres" name="interes_londres" />
+                            <label for="londres">Interesado en Londres</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="viajes" name="interes_viajes" />
+                            <label for="viajes">Interesado en viajes</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferencia de contacto:</label>
+                        <div>
+                            <input type="radio" id="email_pref" name="preferencia" value="email" checked />
+                            <label for="email_pref">Por correo electrónico</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="telefono_pref" name="preferencia" value="telefono" />
+                            <label for="telefono_pref">Por teléfono</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="terminos" name="terminos" required />
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+    
+
+                    <div class="form-group">
                         <label for="comentario">Comentario:</label>
                         <textarea id="comentario" name="comentario" rows="5"
                             placeholder="Escribe tu comentario o consulta aquí"></textarea>
@@ -101,10 +145,15 @@
                 </div>
             </div>
         </div>
+                    <p><strong>Correo:</strong> <a href="mailto:iker.a@opendeusto.es">iker.a@opendeusto.es</a></p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Un viaje inolvidable. ¡Volveré pronto!</p>
         <p>© 2024 Blog de Viaje a Londres | Diseñado por Iker Alvis</p>
+    </footer>
     </footer>
 </body>
 
