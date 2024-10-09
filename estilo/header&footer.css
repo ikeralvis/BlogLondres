@@ -1,18 +1,45 @@
-
 header {
-    background-color: #bababa;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    padding: 5px;
-    
+    width: 100%;
+    overflow: hidden;
 }
 
-
-footer {
-    background-color: #bababa;
-    color: #000000;
+#cabecera {
+    background-image: url("../imagenes/header.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
     text-align: center;
-    padding: 1rem;
+    padding: 50px 20px;
+    width: 100%;  /* Asegura que el div cabecera también ocupe el 100% del ancho */
+}
+
+#cabecera h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem; /* Aumenta el tamaño del h1 */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);   /* Sombra negra para destacar el texto y poder leerlo mejor */
+    margin: 0;
+}
+
+#cabecera h1 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#cabecera h1 a:hover {
+    color: #ffcc00; /* Cambia el color del texto al pasar el ratón */
+}
+
+#cabecera p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;  /* Ajusta el tamaño del párrafo */
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 5);  /* Sombra para que también se vea mejor */
+    margin-top: 10px;
+    
 }
 
 nav {
@@ -20,20 +47,64 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Quita los puntos de la lista */
-    padding: 0; 
+    list-style: none;  /* Quita los puntos de la lista */
+    padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Muestra los elementos en línea */
-    margin-right: 15px; 
+    display: inline;   /* Muestra los elementos en línea */
+    margin-right: 15px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #193048; 
+    text-decoration: none;   /* Quita el subrayado de los enlaces */
+    color: #193048;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Subrayado en los elementos al pasar el ratón */
+    text-decoration: underline;  /* Subrayado en los elementos al pasar el ratón */
+}
+
+footer {
+    background-color: #1b1b1b; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 1.5rem 0; 
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* Sombra en el borde superior */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative; 
+    border-top: 3px solid #202020; 
+}
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    #cabecera h1 {
+        font-size: 2rem;   /* Ajustar el tamaño de la fuente en pantallas pequeñas */
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);    /* Sombra negra para destacar el texto y poder leerlo mejor */
+        margin: 0;
+    }
+
+    #cabecera h1 a:hover {
+        color: #ffcc00;   /* Cambia el color del texto al pasar el ratón */
+    }
+
+    #cabecera h1 a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    #cabecera p {
+        font-size: 1rem;
+        color: white;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);   /* Sombra para que también se vea mejor */
+        margin-top: 10px;
+    }
+    
 }
